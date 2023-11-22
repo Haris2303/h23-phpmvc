@@ -1,0 +1,178 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.content {
+  @apply xl:px-28
+}
+
+/* button */
+.btn {
+  @apply w-full text-center text-sm py-3 rounded-sm shadow-sm transition-300
+}
+.btn-lightgreen {
+  @apply bg-lightgreen text-darkgreen hover:bg-green hover:text-lightgreen;
+}
+.btn-green {
+  @apply bg-darkgreen text-lightgreen;
+}
+
+/* rotate */
+/* .rotate-x-90 {
+  transform: rotateX(90deg)
+}
+.btn-dropdown:hover .rotate-x-90 {
+  transform: rotateX(0)
+} */
+
+
+/* navbar */
+.navbar-fixed {
+  @apply fixed z-[5] bg-white shadow-md;
+}
+
+.hamburger-line {
+  @apply w-[30px] h-[2px] my-2 block
+}
+
+.hamburger-active > span:nth-child(1) {
+  @apply rotate-45
+}
+
+.hamburger-active > span:nth-child(3) {
+  @apply -rotate-45
+}
+
+.hamburger-active > span:nth-child(2) {
+  @apply translate-x-52
+}
+
+.nav-menu {
+  @apply py-5 bg-white shadow-lg px-5 rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none
+}
+
+.menu {
+  transition: all 1s;
+}
+
+/* menu navbar active */
+.nav-active {
+  @apply text-green
+}
+
+/* dropdown active */
+.dropdown-active {
+  @apply p-4 h-auto;
+}
+
+.garis-horizontal::after {
+  content: 'tests';
+  width: 100%;
+  height: 5px;
+  background-color: red;
+}
+
+/* transition */
+.transition-500 {
+  @apply transition-all duration-500 ease-in-out
+}
+
+.transition-300 {
+  @apply transition-all duration-300 ease-in-out
+}
+
+/* img slide */
+.img-slide {
+  @apply w-full md:h-[450px] bg-center object-fill rounded-lg
+}
+
+/* swiper */
+.swiper-pagination-bullet-active {
+  @apply bg-green
+}
+
+.swiper-button-prev::after {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.swiper-button-next::after {
+  font-size: 20px;
+  font-weight: 900;
+}
+
+/* box program */
+.box-program {
+  @apply rounded-md md:flex block md:w-[80%] text-white w-full justify-evenly shadow-md shadow-gray-400 lg:py-0 md:py-3
+}
+.box-program-item {
+  @apply w-auto text-center lg:my-5 py-3
+}
+
+
+/* style title  */
+.title {
+  @apply text-center mt-10
+}
+
+.text-title {
+  @apply font-medium uppercase text-2xl text-darkgray
+}
+
+/* garis progress */
+.garis-progress {
+  @apply block w-full h-1 bg-lightgreen rounded-full;
+  content: '';
+}
+.garis-progress::after {
+  @apply block h-1 bg-green rounded-full;
+  content: '';
+}
+
+
+/* --------------------------------- */
+/*             SIDEBAR */
+/* ---------------------------------- */
+.sidebar {
+  @apply float-left md:w-60 w-0 bg-darkgray transition-500 overflow-hidden
+}
+
+/* sidebar checked */
+.toggle-sidebar:checked + .sidebar {
+  @apply md:w-16 w-0
+}
+
+.toggle-sidebar:not(:checked) + .sidebar {
+  @apply w-60
+}
+
+.sidebar-active {
+  @apply bg-white text-darkgray pl-3 rounded-l-full
+}
+
+.sidebar-menu li{
+  @apply transition-300 ml-5 
+}
+
+.sidebar-menu li:hover {
+  @apply bg-white text-darkgray pl-3 rounded-l-full
+}
+
+.profil {
+  @apply w-8 h-8 rounded-full
+}
+
+.brand {
+  @apply md:text-2xl text-lg text-white transition-300
+}
+
+/* index */
+.box {
+  @apply min-w-[200px] p-5 h-40 bg-white shadow-xl rounded-lg flex justify-center items-center
+}
+
+
+/* form */
+.form-input {
+  @apply shadow-md border-2 border-green rounded-lg block mt-2 py-2 px-3 w-full text-darkgreen outline-none focus:shadow-lightgray transition-300 text-sm
+}
