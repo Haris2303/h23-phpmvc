@@ -1,5 +1,11 @@
 {
-    "require": {
-        "phpmailer/phpmailer": "^6.8"
-    }
+    "name": "haris/h23-phpmvc",
+    "description": "Simple Framework phpmvc by haris2303",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Haris"
+        }
+    ],
+    "require": {}
 }
